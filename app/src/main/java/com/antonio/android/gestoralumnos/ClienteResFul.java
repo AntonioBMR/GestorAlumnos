@@ -54,7 +54,6 @@ public class ClienteResFul {
         HttpPost post = new HttpPost(url);
         post.setHeader("content-type", "application/json");
         try{
-
             StringEntity entidad = new StringEntity(js.toString());
             post.setEntity(entidad);
             HttpResponse respuestaHttp = clienteHttp.execute(post);
@@ -63,8 +62,7 @@ public class ClienteResFul {
         }catch (ClientProtocolException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
-        }
+            e.printStackTrace(); }
         return "error ";
     }
     public static String put(String url, JSONObject js){
@@ -72,10 +70,7 @@ public class ClienteResFul {
         HttpPut put = new HttpPut(url);
         put.setHeader("content-type", "application/json");
         JSONObject objetoJSON = js;
-
         try{
-           /* objetoJSON.put("cadena", "valor");
-            objetoJSON.put("numero", 1);*/
             StringEntity entidad = new StringEntity(objetoJSON.toString());
             put.setEntity(entidad);
             HttpResponse respuestaHttp = clienteHttp.execute(put);
@@ -85,9 +80,7 @@ public class ClienteResFul {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } /*catch (JSONException e) {
-            e.printStackTrace();
-        }*/
+        }
         return "error";
     }
 }

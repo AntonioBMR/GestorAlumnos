@@ -118,8 +118,8 @@ public class ActDetalle extends Activity {
             } catch (JSONException je) {
 
             }
-            tvPro.setText(R.string.prof+sp);
-            tvDep.setText(R.string.dep+sd);
+            tvPro.setText(getResources().getString(R.string.prof)+sp);
+            tvDep.setText(getResources().getString(R.string.dep)+sd);
             System.out.println("prof"+"Profesor: "+sp+" "+sd+" ");
 
             /*try {

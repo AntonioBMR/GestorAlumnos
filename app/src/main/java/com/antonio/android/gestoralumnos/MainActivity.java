@@ -56,7 +56,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemLongClic
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (horizontal) {
-                    fdos.setTexto(lista.get(position).getIdProfesor(), "", lista.get(position).getDescripcion(), "",
+                    fdos.setTexto(lista.get(position).getIdProfesor(), lista.get(position).getTipo(), lista.get(position).getDescripcion(),
                             lista.get(position).getLugarI(), lista.get(position).getFechaI(), lista.get(position).getLugarF(), lista.get(position).getFechaF());
                 } else {
                     Intent i = new Intent(MainActivity.this, ActDetalle.class);
