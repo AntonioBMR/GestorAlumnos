@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFCC00"
+    android:orientation="vertical"
+    android:id="@+id/fragment_a"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="8">
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerAPC"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp" />
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerAGC"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/etProAC"
+            android:hint="Introduzca  profesores"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/etGrAC"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="2dp"
+            android:hint="Introduzca grupo" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/etDepAC"
+            android:hint="Introduzca departamento"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/etDesAC"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:hint="Introduzca descripción" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:id="@+id/etALSC"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:hint="Lugar salida"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tvAFIC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha inicio"
+                    android:textSize="15sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center|right"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btAFIC"
+                    android:background="@android:drawable/ic_menu_my_calendar"
+                    android:layout_gravity="center"
+                    android:onClick="fechaInicioC"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAHIC"
+                    android:tag="horaDe"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp"
+                    android:autoText="false"
+                    android:text="Hora inicio" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pickTime"
+                    android:onClick="horaInicioC"
+                    android:background="@android:drawable/ic_menu_recent_history"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/ibAHIC" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:id="@+id/btAAC"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:id="@+id/btVAC"
+            android:onClick="volverC"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

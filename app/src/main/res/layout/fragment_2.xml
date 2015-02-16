@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" tools:context="com.antonio.android.inmobiliaria.Fragmento2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lldetalle"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:id="@+id/tvDesDM"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="left|center_vertical|center|center_horizontal"
+            android:textSize="25dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:id="@+id/tvProDM"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:textSize="18dp"
+            android:textIsSelectable="false"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvDepDM"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvLSDM"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tvFIDM"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvLLDM"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/tvFLDM"
+            android:layout_gravity="center_vertical"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

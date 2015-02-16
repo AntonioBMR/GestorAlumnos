@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".principal">
+    <item android:id="@+id/actP"
+        android:title="@string/actividadP"
+        android:orderInCategory="100"
+        />
+    <item android:id="@+id/ordena"
+        android:title="@string/ordenaT"
+        android:orderInCategory="100" />
+    <item android:id="@+id/agregar"
+        android:icon="@drawable/masimagen"
+        android:showAsAction="ifRoom"
+        android:title="Agregar Actividades"
+        />
+</menu>
