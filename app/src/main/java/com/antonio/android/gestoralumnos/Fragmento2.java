@@ -1,12 +1,14 @@
 package com.antonio.android.gestoralumnos;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.json.JSONException;
@@ -35,10 +37,17 @@ public class Fragmento2 extends Fragment {
         tv4.setText(texto4);
         TextView tv5=(TextView)v.findViewById(R.id.tvFIDM);
         tv5.setText(texto5);
-        TextView tv6=(TextView)v.findViewById(R.id.tvLLDM);
-        tv6.setText(texto6);
-        TextView tv7=(TextView)v.findViewById(R.id.tvFLDM);
-        tv7.setText(texto7);
+        if(texto2.equals("complementaria")){
+            LinearLayout ll=(LinearLayout)v.findViewById(R.id.lldetalle);
+            ll.setBackgroundColor(Color.parseColor("#FFCC00"));
+        }else{
+            LinearLayout ll=(LinearLayout)v.findViewById(R.id.lldetalle);
+            ll.setBackgroundColor(Color.parseColor("#FF4444"));
+            TextView tv6=(TextView)v.findViewById(R.id.tvLLDM);
+            tv6.setText(texto6);
+            TextView tv7=(TextView)v.findViewById(R.id.tvFLDM);
+            tv7.setText(texto7);
+        }
 
 
     }
